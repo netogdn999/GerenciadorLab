@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.cabecalho{
+	position: absolute;
+	height: 45px;
+	width: 100%;
+	background-color: rgb(0, 122, 204);
+}
+
+.asside{
+	position: absolute;
+	margin-top: 45px;
+	height: 93.2%;
+	width: 300px;
+	background-color: rgb(0, 122, 204);
+}
+
+.menu1 a{
+	position: relative;
+	color: black;
+	text-decoration: none;
+	background-color: rgb(0, 153, 255);
+	top: 1px;
+	padding: 2px 49.1% 2px 30%;
+}
+
+.subM1 a{
+	position: relative;
+	color: black;
+	text-decoration: none;
+	background-color: rgb(0, 107, 179);
+	top: 5px;
+	padding: 2px 45.1% 2px 34%;
+}
+
+.subM2 a{
+	position: relative;
+	color: black;
+	text-decoration: none;
+	background-color: rgb(0, 107, 179);
+	top: 9px;
+	padding: 2px 50.1% 2px 34%;
+}
+
+.subM3 a{
+	position: relative;
+	color: black;
+	text-decoration: none;
+	background-color: rgb(0, 107, 179);
+	top: 17px;
+	padding: 2px 45.1% 2px 34%;
+}
+
+.subM4 a{
+	position: relative;
+	color: black;
+	text-decoration: none;
+	background-color: rgb(0, 107, 179);
+	top: 21px;
+	padding: 2px 50.1% 2px 34%;
+}
+
+.subM5 a{
+	position: relative;
+	color: black;
+	text-decoration: none;
+	background-color: rgb(0, 107, 179);
+	top: 28px;
+	padding: 2px 45.1% 2px 34%;
+}
+
+.subM6 a{
+	position: relative;
+	color: black;
+	text-decoration: none;
+	background-color: rgb(0, 107, 179);
+	top: 32px;
+	padding: 2px 50.1% 2px 34%;
+}
+
+.menu2 a{
+	position: relative;
+	color: black;
+	text-decoration: none;
+	background-color: rgb(0, 153, 255);
+	top: 13px;
+	padding: 2px 48.8% 2px 30%;
+}
+
+.menu3 a{
+	position: relative;
+	color: black;
+	text-decoration: none;
+	background-color: rgb(0, 153, 255);
+	top: 25px;
+	padding: 2px 51.1% 2px 30%;
+}
+
+#menus:hover{
+	cursor: pointer;
+}
+
+.menuUsuario{
+	position: relative;
+	width: 3%;
+	height: auto;
+	float: right;
+	margin-right: 1%;
+}
+
+.menuUsuario img{
+	width: 100%;
+	height: auto;
+}
+
+.menuUsuario:hover{
+	cursor: pointer;
+}
+
+.menuUser{
+	position: relative;
+	height: 46px;
+	width: 100px;
+	margin-top: 46px;
+	margin-right: -55px;
+	float: right;
+	background-color: rgb(0, 122, 204);
+	display: none;
+	z-index: 1000;
+}
+
+.menuUser1 a{
+	position: relative;
+	text-decoration: none;
+	color: black;
+	background-color: rgb(0, 153, 255);
+	padding: 2px 34.5% 2px 30%;
+}
+
+.menuUser2 a{
+	position: relative;
+	text-decoration: none;
+	color: black;
+	top: 4px;
+	background-color: rgb(0, 153, 255);
+	padding: 2px 45.4% 2px 30%;
+}
+
+.subMenu{
+	display:none;
+}

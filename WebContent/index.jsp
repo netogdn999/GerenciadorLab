@@ -5,12 +5,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="css/header.css" charset="UTF-8"/>
+<link rel="stylesheet" href="css/footer.css" charset="UTF-8"/>
+<link rel="stylesheet" href="css/principal.css" charset="UTF-8"/>
+<script rel="text/script" src="js/jquery-3.2.1.js"></script>
+<script rel="text/script" src="js/menuUser.js" charset="UTF-8"></script>
 <title>system</title>
 </head>
 <body>
-<h1>
-logado
-<%out.println("usuário = "+((UsuarioBean) session.getAttribute("userB")).getUsuario()); %>
-</h1>
+<jsp:include page="header.jsp"/>
+	<section class="sectionPrincipal">
+		<article class="articlePrincipal">
+		</article>
+	</section>
+<jsp:include page="footer.jsp"/>
 </body>
 </html>

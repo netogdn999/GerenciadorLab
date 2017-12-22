@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.footer{
+	position: absolute;
+	width: 99%;
+	padding: 0.5% 0.5%;
+	position: absolute;
+	background-color: black;
+	bottom: 0;
+	color: white;
+}

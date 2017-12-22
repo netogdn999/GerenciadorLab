@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: #ddd;
+}
+
+.sectionPrincipal{
+	position: absolute;
+	width: 76.7%;
+	height: 85%;
+	background-color: white;
+	margin: 4% 0 0 22.7%;
+}
+
+.articlePrincipal{
+	position: relative;
+	margin: 2%;
+	width: 96%;
+	height: 96%;
+}
+
+#required:after{
+	content: " *";
+	color: red;
+}
