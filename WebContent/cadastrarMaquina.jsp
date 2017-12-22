@@ -1,3 +1,7 @@
+<%@page import="model.BuscarSOsException"%>
+<%@page import="model.SistemaOperacinal"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="dao.SistemaOperacionalDAO"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ page import="control.UsuarioBean" %>
@@ -17,17 +21,34 @@
 <jsp:include page="header.jsp"/>
 	<section class="sectionPrincipal">
 		<article class="articlePrincipal">
-			<form class="cadastrar" name="cadastrar" method="post" action="control/Logar.jsp">
-				<label for="cadastrar" id="required">Nome da máquina:</label><br/>
-				<input name="nome" type="text" size=80 maxlength="80" required="required"/><br/>
+			<form class="cadastrar" name="cadastrar" method="post" action="control/CadastrarMaquina.jsp">
+				<label for="cadastrar" id="required">Num. da máquina:</label><br/>
+				<input name=idMaquina" type="number" size=80 maxlength="80" required="required"/><br/>
 				<label for="cadastrar" id="required">Processador:</label><br/>
-				<input name="nome" type="text" size=80 maxlength="80" required="required"/><br/>
+				<input name="processador" type="text" size=80 maxlength="80" required="required"/><br/>
 				<label for="cadastrar" id="required">Ram:</label><br/>
-				<input name="nome" type="number" size=80 maxlength="80" required="required"/><br/>
+				<input name="ram" type="text" size=80 maxlength="80" required="required"/><br/>
 				<label for="cadastrar" id="required">Cache:</label><br/>
-				<input name="nome" type="number" size=80 maxlength="80" required="required"/><br/>
-				<label for="cadastrar" id="required">Sistema operacional:</label><br/>
-				<input name="nome" type="text" size=80 maxlength="80" required="required"/><br/>
+				<input name="cache" type="text" size=80 maxlength="80" required="required"/><br/>
+				<label for="cadastrar" id="required">Sistema Operacional:</label><br/>
+				<select name="nomeSO" class="combo" required="required">
+				<% try{
+						SistemaOperacionalDAO SODAO=new SistemaOperacionalDAO();
+						ArrayList<SistemaOperacinal> SOs=SODAO.buscar();
+						for(int i=0; i<SOs.size();i++){%>
+							<option><%=SOs.get(i).getNome() %></option>
+					  <%}
+				   }catch(BuscarSOsException e){%>
+					   <div class="alerta">
+							<h1>
+								<%out.println(e.getMessage());%>
+							</h1>
+							<a href="../index.jsp">Retornar a página de login</a>
+						</div>
+				   <%}%>
+				</select><br>
+				<button type="submit" class="btnCadastrar">Cadastrar</button>
+				<button type="reset" class="btnCancelar">Cancelar</button>
 			</form>
 		</article>
 	</section>

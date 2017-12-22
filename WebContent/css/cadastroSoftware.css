@@ -30,9 +30,8 @@ input{
 	margin: 40px 0 0 75px;
 }
 
-.combo{
-	width:30%;
-	padding: 2px 3px;
+.ocultar{
+	display:none;
 }
 
 button:hover {

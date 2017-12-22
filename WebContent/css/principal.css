@@ -19,9 +19,9 @@ body{
 
 .articlePrincipal{
 	position: relative;
-	margin: 2%;
-	width: 96%;
-	height: 96%;
+	margin: 9% 0 0 9%;
+	width: 91%;
+	height: 91%;
 }
 
 #required:after{

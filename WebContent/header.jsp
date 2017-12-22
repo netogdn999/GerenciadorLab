@@ -20,29 +20,32 @@
 			<a href="cadastrarMaquina.jsp">Cadastrar</a>
 		</div>
 		<div id="menus" class="subM2">
-			<a href="#">Deletar</a>
+			<a href="cadastrarMaquina.jsp">Adicionar programa</a>
+		</div>
+		<div id="menus" class="subM3">
+			<a href="VisualizarMaquina.jsp">Visualizar</a>
 		</div>
 	</div>
 	<div id="menus" class="menu2">
 		<a href="#">Softwares</a>
 	</div>
 	<div id="subMenu2" class="subMenu">
-		<div id="menus" class="subM3">
-			<a href="#">Cadastrar</a>
-		</div>
 		<div id="menus" class="subM4">
-			<a href="#">Deletar</a>
+			<a href="CadastrarSoftware.jsp">Cadastrar</a>
+		</div>
+		<div id="menus" class="subM5">
+			<a href="#">Visualizar</a>
 		</div>
 	</div>
 	<div id="menus" class="menu3">
 		<a href="#">Usuários</a>
 	</div>
 	<div id="subMenu3" class="subMenu">
-		<div id="menus" class="subM5">
+		<div id="menus" class="subM6">
 			<a href="#">Cadastrar</a>
 		</div>
-		<div id="menus" class="subM6">
-			<a href="#">Deletar</a>
+		<div id="menus" class="subM7">
+			<a href="#">Visualizar</a>
 		</div>
 	</div>
 </aside>

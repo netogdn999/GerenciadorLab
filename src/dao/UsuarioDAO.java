@@ -13,6 +13,7 @@ public class UsuarioDAO {
 	private ConnectionFactory con;
 	
 	public UsuarioDAO() throws SQLException {
+		super();
 		setCon(new ConnectionFactory());
 		getCon().conectar("af");
 	}
