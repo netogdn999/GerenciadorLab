@@ -5,6 +5,8 @@ public class ProgramaBean {
 	private boolean SO;
 	private String data;
 	private String nome;
+	private int idMaquina;
+	private String nomeSO;
 	private String licencaID;
 	public ProgramaBean() {
 		super();
@@ -38,5 +40,17 @@ public class ProgramaBean {
 	}
 	public void setSO(boolean sO) {
 		SO = sO;
+	}
+	public String getNomeSO() {
+		return nomeSO;
+	}
+	public void setNomeSO(String nomeSO) {
+		this.nomeSO = nomeSO;
+	}
+	public int getIdMaquina() {
+		return idMaquina;
+	}
+	public void setIdMaquina(int idMaquina) {
+		this.idMaquina = idMaquina;
 	}
 }

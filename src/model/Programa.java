@@ -4,8 +4,7 @@ import java.sql.Date;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-
-import com.sun.javafx.geom.transform.GeneralTransform3D;
+import java.util.ArrayList;
 
 import control.ProgramaBean;
 import dao.ErroProgramaException;
@@ -15,7 +14,9 @@ public class Programa {
 	private boolean livre;
 	private boolean SO;
 	private Date data;
+	private int idMaquina;
 	private String nome;
+	private String nomeSO;
 	private String licencaID;
 	public Programa() {
 		super();
@@ -32,6 +33,7 @@ public class Programa {
 		}
 		setLivre(programa.isLivre());
 		setSO(programa.isSO());
+		setNomeSO(programa.getNomeSO());
 		setNome(programa.getNome());
 	}
 	
@@ -40,6 +42,7 @@ public class Programa {
 		proB.setNome(getNome());
 		proB.setLivre(isLivre());
 		proB.setSO(isSO());
+		proB.setNomeSO(getNomeSO());
 		ProgramaDAO proDAO=new ProgramaDAO();
 		if(!proB.isLivre()) {
 			proB.setData(""+getData());
@@ -47,6 +50,20 @@ public class Programa {
 			proDAO.cadastrar(proB);
 		}else
 			proDAO.cadastrar2(proB);
+	}
+	
+	public void adicionar() throws SQLException, ErroProgramaException {
+		ProgramaBean proB=new ProgramaBean();
+		proB.setIdMaquina(getIdMaquina());
+		proB.setNomeSO(getNomeSO());
+		proB.setNome(getNome());
+		ProgramaDAO proDAO=new ProgramaDAO();
+		proDAO.adicionar(proB);
+	}
+	
+	public ArrayList<ProgramaBean> buscar() throws SQLException, ErroProgramaException{
+		ProgramaDAO pro=new ProgramaDAO();
+		return pro.buscar();
 	}
 	
 	public boolean isLivre() {
@@ -78,6 +95,18 @@ public class Programa {
 	}
 	public void setSO(boolean sO) {
 		SO = sO;
+	}
+	public String getNomeSO() {
+		return nomeSO;
+	}
+	public void setNomeSO(String nomeSO) {
+		this.nomeSO = nomeSO;
+	}
+	public int getIdMaquina() {
+		return idMaquina;
+	}
+	public void setIdMaquina(int idMaquina) {
+		this.idMaquina = idMaquina;
 	}
 	
 }

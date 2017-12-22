@@ -23,7 +23,7 @@
 		<article class="articlePrincipal">
 			<form class="cadastrar" name="cadastrar" method="post" action="control/CadastrarMaquina.jsp">
 				<label for="cadastrar" id="required">Num. da máquina:</label><br/>
-				<input name=idMaquina" type="number" size=80 maxlength="80" required="required"/><br/>
+				<input name="idMaquina" type="number" size=80 maxlength="80" required="required"/><br/>
 				<label for="cadastrar" id="required">Processador:</label><br/>
 				<input name="processador" type="text" size=80 maxlength="80" required="required"/><br/>
 				<label for="cadastrar" id="required">Ram:</label><br/>
@@ -36,7 +36,7 @@
 						SistemaOperacionalDAO SODAO=new SistemaOperacionalDAO();
 						ArrayList<SistemaOperacinal> SOs=SODAO.buscar();
 						for(int i=0; i<SOs.size();i++){%>
-							<option><%=SOs.get(i).getNome() %></option>
+							<option><%=SOs.get(i).getNome()%></option>
 					  <%}
 				   }catch(BuscarSOsException e){%>
 					   <div class="alerta">

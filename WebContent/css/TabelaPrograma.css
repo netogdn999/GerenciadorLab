@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.visualizarPrograma{
+	position: relative;
+	background-color: rgb(0, 122, 204);
+	text-align: center;
+	width: 94%;
+	margin: 4% 0 0 3%;
+	color: white;
+}
+
+.visualizarPrograma td{
+	padding: 1%;
+}
+
+.visualizar{
+	height: 60%;
+}
+
+.dados{
+	background-color: rgba(255,255,255,1);
+	text-align: left;
+	color:black;
+	
+	-webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.view{
+	position: relative;
+	background-color: white;
+	border-style: none;
+	height: 30px;
+	width: auto;
+	margin: 4% 0 -4% 28%;
+}
+
+.view img{
+	height: 100%;
+	width: auto;
+}
+
+.selecionar{
+	position: relative;
+	background-color: white;
+	border-style: none;
+	height: 30px;
+	width: auto;
+	margin: 4% 0 -4% 31.5%;
+}
+
+.selecionar img{
+	height: 100%;
+	width: auto;
+}
+
+.excluir{
+	position: relative;
+	background-color: white;
+	border-style: none;
+	height: 30px;
+	width: auto;
+	margin: 4% 0 -4% 20.5%;
+}
+
+.excluir img{
+	height: 100%;
+	width: auto;
+}
+
+.excluir:hover{
+	cursor: pointer;
+}
+
+.selecionar:hover{
+	cursor: pointer;
+}
+
+.view:hover{
+	cursor: pointer;
+}

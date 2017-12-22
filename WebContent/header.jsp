@@ -20,7 +20,7 @@
 			<a href="cadastrarMaquina.jsp">Cadastrar</a>
 		</div>
 		<div id="menus" class="subM2">
-			<a href="cadastrarMaquina.jsp">Adicionar programa</a>
+			<a href="AdicionarPrograma.jsp">Adicionar programa</a>
 		</div>
 		<div id="menus" class="subM3">
 			<a href="VisualizarMaquina.jsp">Visualizar</a>
